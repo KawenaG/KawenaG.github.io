@@ -1,3 +1,120 @@
+/*------------------------------------------------------------------------------------
+----SCALING-----
+-----------------------------------------------------------------------------------*/
+@-ms-viewport {
+  width: extend-to-zoom;
+  zoom: 1.0;
+}
+
+@viewport {
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*BANNER*/
+/* Cover Image*/
+
+.banner {
+  background-image: url(../img/me2.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 10%;
+  padding-top: 350px;
+  padding-bottom: 500px;
+  height: 900px;/* Paralax Effect */
+  background-attachment: fixed;/* Create the parallax scrolling effect*/
+  background-size: cover;
+}
+/*--------------------------------------------------------------------------------------
+Centered name/text*/
+
+.centered {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-family: "Times New Roman, Times, serif;";
+    color: #AEEEEE; 
+  }
+  
+/*------------------------------------------------------------------------------------
+END BANNER*/
+
+/*--------------------------------------------------------------------------------------
+ABOUT ME
+-------------------------------------------------------------------------------------*
+*/
+.bio {
+  background-color: #AEEEEE;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+/*--------------------------------------------------------------------------------------
+SKILLS
+-------------------------------------------------------------------------------------*
+
+*/
+.skills {
+  background-color: #ffffff;
+  padding-bottom: 20px;
+}
+
+/* .languages h1                  DONT FORGET
+
+.languages p */
+
+.logo1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding-bottom: 10px;
+}
+.logo2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding-bottom: 10px;
+}
+
+.github {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+/*------------------------------------------------------------------------------------
+CONTACT*
+*/
+.contact {
+  background-color: #AEEEEE;
+  text-align: center;
+}
+
+/* .contact h1                DONT FORGET
+
+.contact p
+
+.linkedin */
+
+
+
+
+
+/*--------------------------------------------------------------------------------------
+For Tablet 500px - 699px
+-------------------------------------------------------------------------------------*/
+@media screen and (min-width: 500px) {
 /*NAVBAR*/
 .navbar {
   background-color: transparent !important;
@@ -23,146 +140,70 @@
 .navbar-nav .nav-item li a {
   color: #AEEEEE;
 }
-
-/*END NAVBAR/*
-
--------------------------------------------------------------------------------------
-BANNER
-/* Cover Image*/ 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-@media screen and (min-width: 500px) {
-.banner {
-  background-image: url(../img/me2.JPG);
-  width: 100%;
-  height: 100%;
-  padding-top: 350px;
-  padding-bottom: 700px;
-
-  /* Paralax Effect */
-  height: 900px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/*--------------------------------------------------------------------------------------
-Centered name/text*/
-
+/*END NAVBAR*/
+/*----------------------------------------------------------------------------*/
+/*NAME Overlay*/
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    font-family: "Times New Roman, Times, serif;";
-    color: #AEEEEE;
-  }
-  
-/*------------------------------------------------------------------------------------
-END BANNER*/
-
-/*--------------------------------------------------------------------------------------
-ABOUT ME
--------------------------------------------------------------------------------------*/
-
-.bio {
-  background-color: #AEEEEE;
+  visibility: show;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  font-family: "Times New Roman, Times, serif;";
+  color: #AEEEEE;
 }
+
+/*END Name Overlay*/
+/*----------------------------------------------------------------------------*/
+/*About*/
+.bio
 
 .about h1 {
   padding-top: 200px;
   padding-bottom: 30px;
-  padding-left: 20%;
+  padding-left: 300px;
   font-size: 60px;
 }
 
 .about p {
   padding-top: 0px;
   padding-bottom: 200px;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 300px;
+  padding-right: 300px;
   font-size: 20px;
 }
-
-/*--------------------------------------------------------------------------------------
-SKILLS
--------------------------------------------------------------------------------------*/
-.skills {
-  background-color: #ffffff;
-  padding-bottom: 400px;
-}
-
+/*END About*/
+/*----------------------------------------------------------------------------*/
+/*Skills*/
 .languages h1 {
   padding-top: 80px;
   padding-bottom: 30px;
-  padding-left: 20%;
+  padding-left: 300px;
   font-size: 60px;
 }
 
 .languages p {
   padding-top: 0px;
   padding-bottom: 10px;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 300px;
+  padding-right: 300px;
   font-size: 20px;
 }
 
 /* Language Photos and borders */
-.langgallery {
-  padding-left: 30%;
-  padding-right: 30%;
-}
-
-.logo1, .logo2, .github {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-
-@media screen and (min-width: 700px) {
-  .centered {
-    visibility: visible;
-  }
-
-  .langgallery {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-
-  .logo1, .logo2, .github {
-    padding: 10% 6px 0;
-    float: left;
-    width: 33.23333%;
-    margin-top: 0;
-  }
-
-  .github img {
-    width: 200px;
-    height: 200px;
-  }
-}
-/* .logo1 {
+.logo1 {
+  position: absolute;
+  left: 300px;
   border: 5px solid #000000;
   border-radius: 5px;
   padding: 5px;
+  width: 170px;
 }
 
 .logo2 {
+  position: absolute;
+  left: 500px;
   border: 5px solid #000000;
   border-radius: 5px;
   padding: 5px;
@@ -172,20 +213,11 @@ SKILLS
 .github {
   position: absolute;
   left: 700px;
-
 }
 
-/*------------------------------------------------------------------------------------
-CONTACT*/
-
-.contact {
-  background-color: #AEEEEE;
-  padding-bottom: 600px;
-  padding-top: 80px;
-  padding-bottom: 100px;
-  padding-left: 300px;
-}
-
+/*END Skills*/
+/*----------------------------------------------------------------------------*/
+/*Contact*/
 .contact h1 {
   padding-top: 80px;
   padding-bottom: 30px;
@@ -199,18 +231,23 @@ CONTACT*/
 
 }
 
-
 .linkedin {
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 150px;
+}
+/*END Contact*/
 }
 
+/*--------------------------------------------------------------------------------------
+For Desktop 700+px
+-------------------------------------------------------------------------------------*/
+@media screen and (min-width: 700px) {
 
-/*------------------------------------------------------------------------------------*/
 
-
-<<<<<<< HEAD
-@
-=======
 }
->>>>>>> parent of 5137ab8 (fix)
+
+/*--------------------------------------------------------------------------------------
+For Large Screens (TV's, Large monitors) 1400px +
+-------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1400px) {
+
+}
