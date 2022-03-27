@@ -20,6 +20,7 @@
   padding-left: 900px;
 }
 
+<<<<<<< HEAD
 .navbar-nav .nav-item li a {
   color: #AEEEEE;
 }
@@ -30,6 +31,8 @@
 BANNER
 /* Cover Image*/ 
 
+=======
+>>>>>>> parent of 51b8cf9 (Merge branch 'master' of https://github.com/KawenaG/KawenaG.github.io)
 .banner {
   background-image: url(../img/me2.JPG);
   background-size: cover;
@@ -162,10 +165,24 @@ CONTACT*/
 
 .linkedin {
   padding-right: 150px;
+<<<<<<< HEAD
+=======
+}
+/*END Contact*/
+>>>>>>> parent of 51b8cf9 (Merge branch 'master' of https://github.com/KawenaG/KawenaG.github.io)
 }
 
 
 /*------------------------------------------------------------------------------------*/
 
 
+<<<<<<< HEAD
 @
+=======
+/*--------------------------------------------------------------------------------------
+For Large Screens (TV's, Large monitors) 1400px +
+-------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+>>>>>>> parent of 51b8cf9 (Merge branch 'master' of https://github.com/KawenaG/KawenaG.github.io)
